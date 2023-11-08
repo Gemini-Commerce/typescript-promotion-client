@@ -15,6 +15,10 @@ generate-client:
 	${openapi_generator} \
 	generate -i client-generator/modules/proto/${lower_service}/${lower_service}.swagger.json \
 	--skip-validate-spec \
+	--git-repo-id typescript-client-${service} --git-user-id gogemini --git-host bitbucket.org \
 	-g typescript-axios -t client-generator/templates/go -o client-${lower_service} \
+	-apiPackage=${lower_service} \
 	--additional-properties ${artifact_version}\
 	packageName="${lower_service}",\
+	npmName="@gemini-commerce/typescript-client-${lower_service}",\
+	npmVersion="${version}",\
