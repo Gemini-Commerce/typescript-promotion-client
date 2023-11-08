@@ -1,0 +1,2232 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Promotion Service",
+    "version": "v1",
+    "contact": {
+      "name": "Gemini Team",
+      "email": "info@gemini-commerce.com"
+    },
+    "license": {
+      "name": "Gemini fair use license",
+      "url": "https://gemini-commerce.com/api/fair-use-license"
+    }
+  },
+  "host": "promotion.api.gogemini.io",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/promotion.Promotion/AddCouponCodesToPromotion": {
+      "post": {
+        "operationId": "Promotion_AddCouponCodesToPromotion",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionAddCouponCodesToPromotionResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionAddCouponCodesToPromotionRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/ApplyPromotionsOnCart": {
+      "post": {
+        "summary": "APPLY PROMOTION",
+        "operationId": "Promotion_ApplyPromotionsOnCart",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionApplyPromotionsOnCartResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionApplyPromotionsOnCartRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/CreateCartPromotion": {
+      "post": {
+        "summary": "CART PROMOTION",
+        "operationId": "Promotion_CreateCartPromotion",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionCreateCartPromotionResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionCreateCartPromotionRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/CreateCouponPromotion": {
+      "post": {
+        "summary": "COUPON PROMOTION",
+        "operationId": "Promotion_CreateCouponPromotion",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionCreateCouponPromotionResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionCreateCouponPromotionRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/DeleteCartPromotion": {
+      "post": {
+        "operationId": "Promotion_DeleteCartPromotion",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionDeleteCartPromotionResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionDeleteCartPromotionRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/DeleteCouponPromotion": {
+      "post": {
+        "operationId": "Promotion_DeleteCouponPromotion",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionDeleteCouponPromotionResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionDeleteCouponPromotionRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/EvaluatePromotionsEligibility": {
+      "post": {
+        "operationId": "Promotion_EvaluatePromotionsEligibility",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionEvaluatePromotionsEligibilityResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionEvaluatePromotionsEligibilityRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/GenerateCouponCodes": {
+      "post": {
+        "summary": "COUPON GENERATION",
+        "operationId": "Promotion_GenerateCouponCodes",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionGenerateCouponCodesResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionGenerateCouponCodesRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/GetCartPromotion": {
+      "post": {
+        "operationId": "Promotion_GetCartPromotion",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionCartPromotionResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionGetCartPromotionRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/GetCartPromotionByCode": {
+      "post": {
+        "operationId": "Promotion_GetCartPromotionByCode",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionCartPromotionResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionGetCartPromotionByCodeRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/GetCouponPromotion": {
+      "post": {
+        "operationId": "Promotion_GetCouponPromotion",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionCouponPromotionResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionGetCouponPromotionRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/GetCouponPromotionByCode": {
+      "post": {
+        "operationId": "Promotion_GetCouponPromotionByCode",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionCouponPromotionResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionGetCouponPromotionByCodeRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/ListCartPromotions": {
+      "post": {
+        "operationId": "Promotion_ListCartPromotions",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionListCartPromotionsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionListCartPromotionsRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/ListCouponPromotions": {
+      "post": {
+        "operationId": "Promotion_ListCouponPromotions",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionListCouponPromotionsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionListCouponPromotionsRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/UniquenessCheckCouponCodes": {
+      "post": {
+        "operationId": "Promotion_UniquenessCheckCouponCodes",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionUniquenessCheckCouponCodesResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionUniquenessCheckCouponCodesRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/UpdateCartPromotion": {
+      "post": {
+        "operationId": "Promotion_UpdateCartPromotion",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionUpdateCartPromotionResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionUpdateCartPromotionRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/UpdateCouponPromotion": {
+      "post": {
+        "operationId": "Promotion_UpdateCouponPromotion",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionUpdateCouponPromotionResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionUpdateCouponPromotionRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/UpdateCoupons": {
+      "post": {
+        "summary": "Updates only existing coupon codes",
+        "operationId": "Promotion_UpdateCoupons",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionUpdateCouponsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionUpdateCouponsRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    },
+    "/promotion.Promotion/UpdateCouponsUsage": {
+      "post": {
+        "operationId": "Promotion_UpdateCouponsUsage",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/promotionUpdateCouponsUsageResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/promotionUpdateCouponsUsageRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Promotion"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "CouponPromotionResponseCouponResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "isEnabled": {
+          "type": "boolean"
+        },
+        "numberOfUses": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "userGrns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "couponPromotionId": {
+          "type": "string"
+        }
+      }
+    },
+    "EvaluatePromotionsEligibilityResponsePromotions": {
+      "type": "object",
+      "properties": {
+        "promotionGrns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "GenerateCouponCodesRequestCharset": {
+      "type": "string",
+      "enum": [
+        "ALPHA_NUMERIC",
+        "ALPHA",
+        "NUMERIC"
+      ],
+      "default": "ALPHA_NUMERIC"
+    },
+    "ListCouponPromotionsResponseCouponPromotion": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "grn": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "cartRule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "cartItemsRule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "isEnabled": {
+          "type": "boolean"
+        },
+        "startAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "endAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "usesPerCode": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "usesPerCustomer": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "numberOfGlobalUses": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "currency": {
+          "$ref": "#/definitions/promotionCurrency"
+        },
+        "currencies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCurrency"
+          }
+        },
+        "channels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "markets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "order": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "stopFurtherRuleMaking": {
+          "type": "boolean"
+        }
+      }
+    },
+    "PromotionDataAffectedEntityType": {
+      "type": "string",
+      "enum": [
+        "AFFECTED_ENTITY_TYPE_UNKNOWN",
+        "AFFECTED_ENTITY_TYPE_PAYMENT_SUBTOTAL",
+        "AFFECTED_ENTITY_TYPE_SHIPMENT_SUBTOTAL",
+        "AFFECTED_ENTITY_TYPE_ITEMS_SUBTOTAL",
+        "AFFECTED_ENTITY_TYPE_TAX_SUBTOTAL",
+        "AFFECTED_ENTITY_TYPE_TOTAL",
+        "AFFECTED_ENTITY_TYPE_CART_ITEMS"
+      ],
+      "default": "AFFECTED_ENTITY_TYPE_UNKNOWN"
+    },
+    "promotionAddCouponCodesToPromotionRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "coupons": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCoupon"
+          }
+        }
+      }
+    },
+    "promotionAddCouponCodesToPromotionResponse": {
+      "type": "object",
+      "properties": {
+        "errors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCouponError"
+          }
+        }
+      }
+    },
+    "promotionApplyPromotionsOnCartRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "channel": {
+          "type": "string"
+        },
+        "market": {
+          "type": "string"
+        },
+        "customerGrn": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCartItemRequest"
+          }
+        },
+        "PaymentSubtotal": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "ShipmentSubtotal": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "ItemsSubtotal": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "TaxSubtotal": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "currency": {
+          "$ref": "#/definitions/promotionCurrency"
+        },
+        "total": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "vatIncluded": {
+          "type": "boolean"
+        },
+        "billingAddress": {
+          "$ref": "#/definitions/promotionPostalAddress"
+        },
+        "shippingAddress": {
+          "$ref": "#/definitions/promotionPostalAddress"
+        },
+        "couponCodes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "customer": {
+          "$ref": "#/definitions/promotionCustomerData"
+        }
+      }
+    },
+    "promotionApplyPromotionsOnCartResponse": {
+      "type": "object",
+      "properties": {
+        "promotions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionPromotionData"
+          }
+        }
+      }
+    },
+    "promotionCartItemRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "productGrn": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "price": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "unitPrice": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "basePrice": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "unitBasePrice": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "vatAmount": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "unitVatAmount": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "vatPercentage": {
+          "type": "number",
+          "format": "float"
+        },
+        "localizedName": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "productCode": {
+          "type": "string"
+        },
+        "productSku": {
+          "type": "string"
+        }
+      }
+    },
+    "promotionCartItemResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "productGrn": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "paidQuantity": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "freeQuantity": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "price": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "unitPrice": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "basePrice": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "unitBasePrice": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "vatAmount": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "unitVatAmount": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "listPrice": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "unitListPrice": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "discount": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "unitDiscount": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "vatPercentage": {
+          "type": "number",
+          "format": "float"
+        },
+        "productCode": {
+          "type": "string"
+        },
+        "productSku": {
+          "type": "string"
+        }
+      }
+    },
+    "promotionCartPromotionResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "grn": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "cartRule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "cartItemsRule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "isEnabled": {
+          "type": "boolean"
+        },
+        "startAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "endAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "order": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "stopFurtherRuleMaking": {
+          "type": "boolean"
+        },
+        "currency": {
+          "$ref": "#/definitions/promotionCurrency"
+        },
+        "currencies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCurrency"
+          }
+        },
+        "channels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "markets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "promotionCoupon": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "isEnabled": {
+          "type": "boolean"
+        }
+      }
+    },
+    "promotionCouponError": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "couponCode": {
+          "type": "string"
+        }
+      }
+    },
+    "promotionCouponPromotionResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "grn": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "cartRule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "cartItemsRule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "isEnabled": {
+          "type": "boolean"
+        },
+        "startAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "endAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "coupons": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CouponPromotionResponseCouponResponse"
+          }
+        },
+        "usesPerCode": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "usesPerCustomer": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "currency": {
+          "$ref": "#/definitions/promotionCurrency"
+        },
+        "currencies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCurrency"
+          }
+        },
+        "channels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "markets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "stopFurtherRuleMaking": {
+          "type": "boolean"
+        }
+      }
+    },
+    "promotionCreateCartPromotionRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "cartRule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "cartItemsRule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "isEnabled": {
+          "type": "boolean"
+        },
+        "startAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "endAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "order": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "stopFurtherRuleMaking": {
+          "type": "boolean"
+        },
+        "currency": {
+          "$ref": "#/definitions/promotionCurrency"
+        },
+        "currencies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCurrency"
+          }
+        },
+        "channels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "markets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "promotionCreateCartPromotionResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "grn": {
+          "type": "string"
+        }
+      }
+    },
+    "promotionCreateCouponPromotionRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "cartRule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "cartItemsRule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "isEnabled": {
+          "type": "boolean"
+        },
+        "startAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "endAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "coupons": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCoupon"
+          },
+          "title": "optional - relevant only with auto_generate_coupon_codes == false"
+        },
+        "usesPerCode": {
+          "type": "integer",
+          "format": "int32",
+          "title": "-1 means unlimited"
+        },
+        "usesPerCustomer": {
+          "type": "integer",
+          "format": "int32",
+          "title": "-1 means unlimited"
+        },
+        "currency": {
+          "$ref": "#/definitions/promotionCurrency"
+        },
+        "currencies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCurrency"
+          }
+        },
+        "channels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "markets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "autoGenerateCouponCodes": {
+          "type": "boolean"
+        },
+        "autoGenerateCouponProperties": {
+          "$ref": "#/definitions/promotionGenerateCouponCodesRequest",
+          "title": "optional - relevant only with auto_generate_coupon_codes == true"
+        },
+        "order": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "stopFurtherRuleMaking": {
+          "type": "boolean"
+        }
+      }
+    },
+    "promotionCreateCouponPromotionResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "grn": {
+          "type": "string"
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCouponError"
+          }
+        }
+      }
+    },
+    "promotionCurrency": {
+      "type": "string",
+      "enum": [
+        "XXX",
+        "ALL",
+        "DZD",
+        "ARS",
+        "AUD",
+        "BSD",
+        "BHD",
+        "BDT",
+        "AMD",
+        "BBD",
+        "BMD",
+        "BTN",
+        "BOB",
+        "BWP",
+        "BZD",
+        "SBD",
+        "BND",
+        "MMK",
+        "BIF",
+        "KHR",
+        "CAD",
+        "CVE",
+        "KYD",
+        "LKR",
+        "CLP",
+        "CNY",
+        "COP",
+        "KMF",
+        "CRC",
+        "HRK",
+        "CUP",
+        "CZK",
+        "DKK",
+        "DOP",
+        "SVC",
+        "ETB",
+        "ERN",
+        "FKP",
+        "FJD",
+        "DJF",
+        "GMD",
+        "GIP",
+        "GTQ",
+        "GNF",
+        "GYD",
+        "HTG",
+        "HNL",
+        "HKD",
+        "HUF",
+        "ISK",
+        "INR",
+        "IDR",
+        "IRR",
+        "IQD",
+        "ILS",
+        "JMD",
+        "JPY",
+        "KZT",
+        "JOD",
+        "KES",
+        "KPW",
+        "KRW",
+        "KWD",
+        "KGS",
+        "LAK",
+        "LBP",
+        "LSL",
+        "LRD",
+        "LYD",
+        "LTL",
+        "MOP",
+        "MWK",
+        "MYR",
+        "MVR",
+        "MRO",
+        "MUR",
+        "MXN",
+        "MNT",
+        "MDL",
+        "MAD",
+        "OMR",
+        "NAD",
+        "NPR",
+        "ANG",
+        "AWG",
+        "VUV",
+        "NZD",
+        "NIO",
+        "NGN",
+        "NOK",
+        "PKR",
+        "PAB",
+        "PGK",
+        "PYG",
+        "PEN",
+        "PHP",
+        "QAR",
+        "RUB",
+        "RWF",
+        "SHP",
+        "STD",
+        "SAR",
+        "SCR",
+        "SLL",
+        "SGD",
+        "VND",
+        "SOS",
+        "ZAR",
+        "SSP",
+        "SZL",
+        "SEK",
+        "CHF",
+        "SYP",
+        "THB",
+        "TOP",
+        "TTD",
+        "AED",
+        "TND",
+        "UGX",
+        "MKD",
+        "EGP",
+        "GBP",
+        "TZS",
+        "USD",
+        "UYU",
+        "UZS",
+        "WST",
+        "YER",
+        "TWD",
+        "CUC",
+        "ZWL",
+        "TMT",
+        "GHS",
+        "VEF",
+        "SDG",
+        "UYI",
+        "RSD",
+        "MZN",
+        "AZN",
+        "RON",
+        "CHE",
+        "CHW",
+        "TRY",
+        "XAF",
+        "XCD",
+        "XOF",
+        "XPF",
+        "XBA",
+        "XBB",
+        "XBC",
+        "XBD",
+        "XAU",
+        "XDR",
+        "XAG",
+        "XPT",
+        "XPD",
+        "XUA",
+        "ZMW",
+        "SRD",
+        "MGA",
+        "COU",
+        "AFN",
+        "TJS",
+        "AOA",
+        "BYR",
+        "BGN",
+        "CDF",
+        "BAM",
+        "EUR",
+        "MXV",
+        "UAH",
+        "GEL",
+        "BOV",
+        "PLN",
+        "BRL",
+        "CLF",
+        "XSU",
+        "USN"
+      ],
+      "default": "XXX",
+      "title": "- XXX: XXX = 999; //Changed to 0 because proto3 requires the default to be 0\n - ALL: XTS = 963; //Codes specifically reserved for testing purposes"
+    },
+    "promotionCustomerData": {
+      "type": "object",
+      "properties": {
+        "customerGrn": {
+          "type": "string"
+        },
+        "firstname": {
+          "type": "string"
+        },
+        "lastname": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "promotionDeleteCartPromotionRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "promotionDeleteCartPromotionResponse": {
+      "type": "object"
+    },
+    "promotionDeleteCouponPromotionRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "promotionDeleteCouponPromotionResponse": {
+      "type": "object"
+    },
+    "promotionEvaluatePromotionsEligibilityRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "productGrns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "promotionGrns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "promotionEvaluatePromotionsEligibilityResponse": {
+      "type": "object",
+      "properties": {
+        "productGrnToPromotionGrns": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/EvaluatePromotionsEligibilityResponsePromotions"
+          }
+        }
+      }
+    },
+    "promotionGenerateCouponCodesRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "prefix": {
+          "type": "string"
+        },
+        "suffix": {
+          "type": "string"
+        },
+        "totalCoupons": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "couponLength": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "charset": {
+          "$ref": "#/definitions/GenerateCouponCodesRequestCharset"
+        }
+      }
+    },
+    "promotionGenerateCouponCodesResponse": {
+      "type": "object",
+      "properties": {
+        "couponCodes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "promotionGetCartPromotionByCodeRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "promotionGetCartPromotionRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "promotionGetCouponPromotionByCodeRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "promotionGetCouponPromotionRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "promotionListCartPromotionsRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "pageSize": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "pageToken": {
+          "type": "string"
+        }
+      }
+    },
+    "promotionListCartPromotionsResponse": {
+      "type": "object",
+      "properties": {
+        "cartPromotions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCartPromotionResponse"
+          }
+        },
+        "nextPageToken": {
+          "type": "string"
+        }
+      }
+    },
+    "promotionListCouponPromotionsRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "pageSize": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "pageToken": {
+          "type": "string"
+        }
+      }
+    },
+    "promotionListCouponPromotionsResponse": {
+      "type": "object",
+      "properties": {
+        "couponPromotions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ListCouponPromotionsResponseCouponPromotion"
+          }
+        },
+        "nextPageToken": {
+          "type": "string"
+        }
+      }
+    },
+    "promotionMoney": {
+      "type": "object",
+      "properties": {
+        "units": {
+          "type": "string",
+          "format": "int64",
+          "description": "The whole units of the amount.\nFor example if `currencyCode` is `\"USD\"`, then 1 unit is one US dollar."
+        },
+        "micros": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Number of micro (10^-6) units of the amount.\nThe value must be between -999,999 and +999,999 inclusive.\nIf `units` is positive, `micros` must be positive or zero.\nIf `units` is zero, `micros` can be positive, zero, or negative.\nIf `units` is negative, `micros` must be negative or zero.\nFor example $-1.75 is represented as `units`=-1 and `micros`=-750,000."
+        }
+      }
+    },
+    "promotionPostalAddress": {
+      "type": "object",
+      "properties": {
+        "revision": {
+          "type": "integer",
+          "format": "int32",
+          "description": "The schema revision of the `PostalAddress`. This must be set to 0, which is\nthe latest revision.\n\nAll new revisions **must** be backward compatible with old revisions."
+        },
+        "regionCode": {
+          "type": "string",
+          "description": "Required. CLDR region code of the country/region of the address. This\nis never inferred and it is up to the user to ensure the value is\ncorrect. See http://cldr.unicode.org/ and\nhttp://www.unicode.org/cldr/charts/30/supplemental/territory_information.html\nfor details. Example: \"CH\" for Switzerland."
+        },
+        "languageCode": {
+          "type": "string",
+          "description": "Optional. BCP-47 language code of the contents of this address (if\nknown). This is often the UI language of the input form or is expected\nto match one of the languages used in the address' country/region, or their\ntransliterated equivalents.\nThis can affect formatting in certain countries, but is not critical\nto the correctness of the data and will never affect any validation or\nother non-formatting related operations.\n\nIf this value is not known, it should be omitted (rather than specifying a\npossibly incorrect default).\n\nExamples: \"zh-Hant\", \"ja\", \"ja-Latn\", \"en\"."
+        },
+        "postalCode": {
+          "type": "string",
+          "description": "Optional. Postal code of the address. Not all countries use or require\npostal codes to be present, but where they are used, they may trigger\nadditional validation with other parts of the address (e.g. state/zip\nvalidation in the U.S.A.)."
+        },
+        "sortingCode": {
+          "type": "string",
+          "description": "Optional. Additional, country-specific, sorting code. This is not used\nin most regions. Where it is used, the value is either a string like\n\"CEDEX\", optionally followed by a number (e.g. \"CEDEX 7\"), or just a number\nalone, representing the \"sector code\" (Jamaica), \"delivery area indicator\"\n(Malawi) or \"post office indicator\" (e.g. Côte d'Ivoire)."
+        },
+        "administrativeArea": {
+          "type": "string",
+          "description": "Optional. Highest administrative subdivision which is used for postal\naddresses of a country or region.\nFor example, this can be a state, a province, an oblast, or a prefecture.\nSpecifically, for Spain this is the province and not the autonomous\ncommunity (e.g. \"Barcelona\" and not \"Catalonia\").\nMany countries don't use an administrative area in postal addresses. E.g.\nin Switzerland this should be left unpopulated."
+        },
+        "locality": {
+          "type": "string",
+          "description": "Optional. Generally refers to the city/town portion of the address.\nExamples: US city, IT comune, UK post town.\nIn regions of the world where localities are not well defined or do not fit\ninto this structure well, leave locality empty and use address_lines."
+        },
+        "sublocality": {
+          "type": "string",
+          "description": "Optional. Sublocality of the address.\nFor example, this can be neighborhoods, boroughs, districts."
+        },
+        "addressLines": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Unstructured address lines describing the lower levels of an address.\n\nBecause values in address_lines do not have type information and may\nsometimes contain multiple values in a single field (e.g.\n\"Austin, TX\"), it is important that the line order is clear. The order of\naddress lines should be \"envelope order\" for the country/region of the\naddress. In places where this can vary (e.g. Japan), address_language is\nused to make it explicit (e.g. \"ja\" for large-to-small ordering and\n\"ja-Latn\" or \"en\" for small-to-large). This way, the most specific line of\nan address can be selected based on the language.\n\nThe minimum permitted structural representation of an address consists\nof a region_code with all remaining information placed in the\naddress_lines. It would be possible to format such an address very\napproximately without geocoding, but no semantic reasoning could be\nmade about any of the address components until it was at least\npartially resolved.\n\nCreating an address only containing a region_code and address_lines, and\nthen geocoding is the recommended way to handle completely unstructured\naddresses (as opposed to guessing which parts of the address should be\nlocalities or administrative areas)."
+        },
+        "recipients": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Optional. The recipient at the address.\nThis field may, under certain circumstances, contain multiline information.\nFor example, it might contain \"care of\" information."
+        },
+        "organization": {
+          "type": "string",
+          "description": "Optional. The name of the organization at the address."
+        },
+        "phoneNumber": {
+          "type": "string",
+          "description": "Optional."
+        }
+      },
+      "description": "Represents a postal address, e.g. for postal delivery or payments addresses.\nGiven a postal address, a postal service can deliver items to a premise, P.O.\nBox or similar.\nIt is not intended to model geographical locations (roads, towns,\nmountains).\n\nIn typical usage an address would be created via user input or from importing\nexisting data, depending on the type of process.\n\nAdvice on address input / editing:\n - Use an i18n-ready address widget such as\n   https://github.com/google/libaddressinput)\n- Users should not be presented with UI elements for input or editing of\n  fields outside countries where that field is used.\n\nFor more guidance on how to use this schema, please see:\nhttps://support.google.com/business/answer/6397478"
+    },
+    "promotionPromotionData": {
+      "type": "object",
+      "properties": {
+        "promotionGrn": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "payload": {
+          "type": "string"
+        },
+        "cartItems": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCartItemResponse"
+          }
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "couponCode": {
+          "type": "string"
+        },
+        "discount": {
+          "$ref": "#/definitions/promotionMoney"
+        },
+        "affectedEntityType": {
+          "$ref": "#/definitions/PromotionDataAffectedEntityType"
+        }
+      }
+    },
+    "promotionUniquenessCheckCouponCodesRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "couponCodes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "promotionUniquenessCheckCouponCodesResponse": {
+      "type": "object",
+      "properties": {
+        "uniqueCouponCodes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "alreadyUsedCouponCodes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "promotionUpdateCartPromotionRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "payload": {
+          "$ref": "#/definitions/promotionUpdateCartPromotionRequestPayload"
+        },
+        "payloadMask": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "promotionUpdateCartPromotionRequestPayload": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "cartRule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "cartItemsRule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "isEnabled": {
+          "type": "boolean"
+        },
+        "startAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "endAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "order": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "stopFurtherRuleMaking": {
+          "type": "boolean"
+        },
+        "currency": {
+          "$ref": "#/definitions/promotionCurrency"
+        },
+        "currencies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCurrency"
+          }
+        },
+        "channels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "markets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "promotionUpdateCartPromotionResponse": {
+      "type": "object"
+    },
+    "promotionUpdateCouponPromotionRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "payload": {
+          "$ref": "#/definitions/promotionUpdateCouponPromotionRequestPayload"
+        },
+        "payloadMask": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "promotionUpdateCouponPromotionRequestPayload": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "cartRule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "cartItemsRule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "isEnabled": {
+          "type": "boolean"
+        },
+        "startAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "endAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "usesPerCode": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "usesPerCustomer": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "currency": {
+          "$ref": "#/definitions/promotionCurrency"
+        },
+        "currencies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCurrency"
+          }
+        },
+        "channels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "markets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "order": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "stopFurtherRuleMaking": {
+          "type": "boolean"
+        }
+      }
+    },
+    "promotionUpdateCouponPromotionResponse": {
+      "type": "object"
+    },
+    "promotionUpdateCouponsRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "promotionId": {
+          "type": "string"
+        },
+        "coupons": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCoupon"
+          }
+        }
+      }
+    },
+    "promotionUpdateCouponsResponse": {
+      "type": "object",
+      "properties": {
+        "coupons": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/promotionCoupon"
+          }
+        }
+      }
+    },
+    "promotionUpdateCouponsUsageRequest": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "codes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "userGrn": {
+          "type": "string"
+        },
+        "usageDate": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "promotionUpdateCouponsUsageResponse": {
+      "type": "object"
+    },
+    "protobufAny": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string",
+          "format": "byte"
+        }
+      }
+    },
+    "protobufNullValue": {
+      "type": "string",
+      "enum": [
+        "NULL_VALUE"
+      ],
+      "default": "NULL_VALUE",
+      "description": "`NullValue` is a singleton enumeration to represent the null value for the\n`Value` type union.\n\n The JSON representation for `NullValue` is JSON `null`.\n\n - NULL_VALUE: Null value."
+    },
+    "rpcStatus": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/protobufAny"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "standardAuthorization": {
+      "type": "oauth2",
+      "name": "Authorization",
+      "in": "header",
+      "flow": "implicit"
+    }
+  }
+}
